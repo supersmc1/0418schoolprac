@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0; padding:0;}
+    .web{
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+    }
+
+    .header{
+      width:100vw;
+      height:10vh;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(224, 219, 219);
+      
+    }
+    
+    .header>div:nth-child(1){
+      width: 10vw;
+      height: 8vh;
+      margin:8px;
+      background-color: gray;
+    }
+
+    .menu{
+      width: 55vw;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin:30px;
+      background-color: gray;
+ 
+    }
+
+    .menu>div{
+      width: 13vw;
+      height: 17vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin:3px;
+      background-color: #ccc;
+      list-style-type: none;
+      
+    }
+    li{
+      margin-top:5px;
+    }
+    
+
+
+
+
+
+
+    .main1{
+      width: 100vw;
+      height: 50vh;
+      background-color: #ccc;
+    }
+
+    .main1>div{
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position:absolute;
+    }
+
+    .main1>div>div:nth-child(1){
+      width: 30vw;
+      height: 30vh;
+      background-color: rgb(224, 219, 219);
+      
+      position:absolute;
+      left: 7%;
+      top:10%;
+      z-index: 4;
+    }
+
+    .main1>div>div:nth-child(2){
+      width: 30vw;
+      height: 30vh;
+      position:absolute;
+      background-color: rgb(51, 50, 50);
+      left:9%;
+      z-index: 3;
+      
+
+
+
+    }
+
+    .main1>div>div:nth-child(3){
+      width: 30vw;
+      height: 30vh;
+      position:absolute;
+      background-color: black;
+      z-index: 1;
+      top:30%;
+      left:11%;
+      z-index: 2;
+
+    }
+    
+    .main2{
+      width: 100vw;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(160, 158, 158);
+    }
+
+    .main2>div{
+      width: 32vw;
+      height: 25vh;
+      border: 1px solid black;
+      margin-left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(224, 219, 219);
+
+    }
+    
+    .main2>div:nth-child(1)>div:nth-child(1){
+      width: 18vw;
+      height: 18vh;
+      position: relative;
+      left:20px;
+      bottom:20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: gray;
+    }
+
+    .main2>div:nth-child(1)>div:nth-child(2){
+      width: 18vw;
+      height: 18vh;
+      position: relative;
+      top:20px;
+      right:20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: black;
+
+    }
+
+    .main2>div:nth-child(1)>div>div:nth-child(1){
+      width: 15vw;
+      height: 5vh;
+      background-color: rgb(224, 219, 219);
+      
+      margin:5px;
+    
+
+    }
+
+    .main2>div:nth-child(1)>div>div:nth-child(2){
+      width: 15vw;
+      height: 10vh;
+      background-color: rgb(224, 219, 219);
+      
+
+    }
+
+
+    .footer{
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: gray;
+    }
+    
+    .footer>div{
+      margin:3px;
+      background-color: rgb(224, 219, 219);
+    }
+
+    .footer>div:nth-child(1){
+      width: 24vw;
+      height: 7vh;
+      
+    }
+
+    .footer>div:nth-child(2){
+      width: 45vw;
+      height: 7vh;
+    }
+
+    .footer>div:nth-child(3){
+      width: 24vw;
+      height: 7vh;
+      margin: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="web">
+
+    <div class="header">
+
+      <div></div>
+
+      <div class="menu">
+        <div>
+          <li>MENU</li>
+          <li>ITEM-1</li>
+          <li>ITEM-2</li>
+          <li>ITEM-3</li>
+        </div>
+        <div>
+          <li>MENU</li>
+          <li>ITEM-1</li>
+          <li>ITEM-2</li>
+          <li>ITEM-3</li>
+        </div>
+        <div>
+          <li>MENU</li>
+          <li>ITEM-1</li>
+          <li>ITEM-2</li>
+          <li>ITEM-3</li>
+        </div>
+        <div>
+          <li>MENU</li>
+          <li>ITEM-1</li>
+          <li>ITEM-2</li>
+          <li>ITEM-3</li>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main1">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="main2">
+
+      <div>
+
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+
+      </div>
+
+      <div></div>
+
+      <div></div>
+
+    </div>
+
+    <div class="footer">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>
